@@ -10,12 +10,13 @@ const Nav = () => {
   const navigate = useNavigate();
 
   const scrollToSection = (sectionId) => {
-    setActiveSection(sectionId);  // Update the active section
     navigate('/');  // Ensure we're on the home page
     setTimeout(() => {
       const section = document.getElementById(sectionId);
       if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        const yOffset = -50; // 10px offset from the top
+        const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       }
     }, 100); // Delay ensures the page navigates to home before scrolling
   };
