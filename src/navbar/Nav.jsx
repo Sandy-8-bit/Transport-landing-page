@@ -19,7 +19,7 @@ const Nav = () => {
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
     }, 100); // Delay ensures the page navigates to home before scrolling
-     setActiveSection(sectionId); // Set the active section to highlight
+    setActiveSection(sectionId); // Set the active section to highlight
   };
 
   return (
