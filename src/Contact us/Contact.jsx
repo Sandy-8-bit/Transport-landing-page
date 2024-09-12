@@ -104,6 +104,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className="app-form-input"
                   placeholder="Phone"
+                   maxlength="10"
                   required
                 />
               </div>
