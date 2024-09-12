@@ -77,6 +77,16 @@ const Footer = () => {
   <p> Welcome to Eintransport! We are a trusted and reliable packing and moving service dedicated to making your relocation experience smooth and hassle-free.</p>
 </div>
 <div className="three-footer-res">
+  <a href="https://www.instagram.com/yourusername/" target="_blank"> 
+  <img src={group} alt='img'/>
+</a>
+
+<a href="https://www.twitter.com/yourusername/" target="_blank"> 
+  <img src={group2} alt='img'/>
+</a>
+<a href="https://www.facebook.com/yourusername/" target="_blank"> 
+  <img src={group3} alt='img'/>
+</a>
 
 
         </div>
