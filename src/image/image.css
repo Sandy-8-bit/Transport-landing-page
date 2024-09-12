@@ -1,0 +1,243 @@
+/* Reset all margins to 0 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-child1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    
+    line-height: 42px; /* 105% */
+    letter-spacing: 1px;
+    align-self: stretch;
+}
+
+.app-grand-child1 {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.2px;
+}
+
+.app-grand-child-2 {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.2px;
+}
+
+.app-first-image-child2 {
+    color: #DAC48B; /* Change color for the specified text */
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px; /* 140.625% */
+    letter-spacing: 0.2px;
+}
+
+.app-first-image-child2 h4 span {
+    color: #FFF; /* Change color to white only for "We are in" */
+}
+
+.app-button-image button {
+    display: flex;
+    width: 200px;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #DAC48B;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 110% */
+    letter-spacing: 0.2px;
+    border: none;
+}
+
+.app-button-image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.app-first-image-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-whole-image {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 42px 82px;
+    background-image: url('Untitled\ Project.jpg'); /* Add the background image */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.app-child2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.app-first-image-child1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.app-after-br {
+    display: inline-block;
+    margin-top: 40px; /* Adjust this value as needed */
+}
+
+.app-card-item {
+    width: 320px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 36px 24px;
+    border-radius: 9px;
+    background-color: #EFE9DB;
+    justify-content: start;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.app-card-item:hover {
+    background-color: #DAC48B;
+    color: #ffffff; /* Change to your preferred active color */
+}
+.app-card-item:hover p{
+    color: #ffffff;
+}
+.app-card-item:hover span {
+    color: #ffffff; /* Change span text color to white */
+}
+.app-card-item p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000; /* Default text color */
+}
+
+.app-card-item.active p span {
+    color: #000; /* Text color when active */
+}
+
+.app-second-image-cont {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.app-card-item img {
+    height: 50px;
+    width: 60px;
+}
+.app-button-image button{
+    cursor: pointer;
+}
+.highlight-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #ECB176;
+  }
+
+  
+
+/* Media Queries for smaller devices */
+@media (max-width: 500px) {
+    /* Styles for 320x480 devices */
+    .app-child1 {
+        font-size: 20px;
+    }
+
+    .app-first-image-child2 {
+        font-size: 16px;
+    }
+
+    .app-child2 p {
+        font-size: 13px;
+    }
+
+    .app-card-item {
+        width: 120px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+        border-radius: 9px;
+        background-color: #EFE9DB;
+        justify-content: start;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .app-card-item p {
+        font-size: 10px;
+        font-weight: 500;
+        color: #000; /* Default text color */
+    }
+
+    .app-button-image button {
+        display: flex;
+        width: 170px;
+        padding: 12px 12px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: #DAC48B;
+        color: black;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 110% */
+        letter-spacing: 0.2px;
+        border: none;
+    }
+
+
+    .app-whole-image {
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+
+    .app-first-image-child1 {
+        gap: 12px;
+        padding-top: 10px;
+    }
+    .app-second-image-cont{
+        display: none;
+    }
+    .app-whole-image{
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+}

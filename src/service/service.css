@@ -1,0 +1,130 @@
+.whole-service {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 82px;
+}
+.head-service span {
+    color: #6F1D1B;
+    font-size: 32px;
+}
+.body1-service {
+    position: relative; /* To make this element a reference for absolutely positioned children */
+    background-color: #F2DFB1;
+    padding: 24px 36px;
+    border-radius: 18px;
+}
+.head-service h4 {
+    font-size: 32px;
+}
+.head-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body1-service ul li {
+    color: #737373;
+    text-align: justify;
+}
+.body1-service ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+.body-service {
+    display: flex;
+    gap: 32px;
+}
+.h-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-service {
+    position: absolute; /* Make the img-service a positioned element */
+    top: 25%; /* Align it vertically */
+    left: 49%; /* Align it horizontally */
+    transform: translate(-50%, -40%); /* Move it back by 50% of its width and height to center it */
+    z-index: 1; /* Ensure it appears above the background image */
+}
+.img-service img {
+    height: 76px;
+    width: 76px;
+}
+.bg-bg {
+    position: relative;
+    z-index: 0; /* Background image should be behind the overlay image */
+}
+.bg-bg img {
+    height: 161px;
+    width: 161px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-service {
+    padding-left: 20px;
+    z-index: 2; /* Content should be above the background image */
+    position: relative;
+    text-align: justify;
+    justify-content: center;
+}
+.h-tag h5{
+    position: absolute; /* Make the img-service a positioned element */
+    top: 45%; /* Align it vertically */
+    left: 49%; /* Align it horizontally */
+    transform: translate(-50%, 0%); 
+    z-index: 1; /* Ensure it appears above the background image */
+    font-size: 20px;
+    color: #252b42f0;
+}
+
+@media  (max-width: 500px)  {
+    .whole-service {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 12px;
+    }
+    .body1-service {
+        position: relative; /* To make this element a reference for absolutely positioned children */
+        background-color: #F2DFB1;
+        padding: 24px ;
+        border-radius: 18px;
+        gap: 14px;
+    }
+    .body1-service ul li {
+        color: #737373;
+        text-align: justify;
+        font-size: 13px;
+    }.body-service {
+        display: flex;
+        gap: 18px;
+        flex-direction: column;
+    }
+    .h-tag h5{
+        position: absolute; /* Make the img-service a positioned element */
+        top: 40%; /* Align it vertically */
+        left: 49%; /* Align it horizontally */
+        transform: translate(-50%, 0%); 
+        z-index: 1; /* Ensure it appears above the background image */
+        font-size: 16px;
+        color: #252b42f0;
+    }
+    .bg-bg {
+        position: relative;
+        z-index: 0; /* Background image should be behind the overlay image */
+    }
+    .bg-bg img {
+        height: 112px;
+        width: 113px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-service img {
+        height: 62px;
+        width: 62px;
+    }
+}

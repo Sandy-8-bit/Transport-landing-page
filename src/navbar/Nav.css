@@ -1,0 +1,137 @@
+/* General body styling */
+body {
+  background: #EFE9DB;
+  margin: 0;
+}
+.menu{
+  display: none;
+}
+/* Navigation container styling */
+.whole-nav {
+  display: flex;
+  height: 58px;
+  justify-content: space-between;
+  align-items: center;
+  background: #EAEAEA;
+  box-shadow: 0px 11px 12.2px 0px rgba(255, 255, 255, 0.25);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* Remove blue color and underline for all links */
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Makes the link inherit the color from its parent */
+}
+
+
+
+/* Specific styles for the nav items */
+.right-side-nav ul li a {
+  color: #000; /* Set a custom color */
+}
+
+.logo-nav {
+  color: #000;
+}
+
+.right-side-nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.right-side-nav ul {
+  list-style-type: none; /* Remove bullets from the list */
+  display: flex;         /* Align list items horizontally */
+  padding: 0;            /* Remove default padding */
+  margin: 0;             /* Remove default margin */
+  color: #000000;
+}
+
+.right-side-nav ul li {
+  position: relative;      /* Required for the sliding effect */
+  cursor: pointer;         /* Change cursor to pointer on hover */
+  padding: 0 25px;         /* Adjust gap (half of 50px on each side) */
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+  color: #000;
+}
+
+/* Hover effect with ease-in, ease-out sliding animation */
+.right-side-nav ul li::after {
+  content: ''; /* Empty content to create the sliding underline */
+  position: absolute;
+  bottom: -3px; /* Adjusts the line position */
+  left: 0;
+  width: 0;
+  height: 2px; /* Height of the underline */
+  background-color: #8A3026; /* Color of the underline */
+  transition: width 0.3s ease-in-out; /* Smooth slide animation */
+}
+
+.right-side-nav ul li:hover::after {
+  width: 100%; /* Expands the underline to the full width on hover */
+}
+
+/* Active or hovered items underline */
+.right-side-nav ul li.active,
+.right-side-nav ul li:hover {
+  color: #8A3026;
+}
+
+/* Active state styling for selected option */
+.right-side-nav ul li.active {
+  color: #8A3026; /* Highlight the active option with a different color */
+  font-weight: bold; /* Make the active option bold */
+}
+
+
+/* Logo styling */
+.logo-nav img {
+  height: 100%;
+  width: 100%;
+}
+.phonelogo{
+  display: none;
+}
+/* Media query for devices with 320x480 screen size */
+@media  (max-width: 500px)  {
+  /* Styles for 320x480 devices */
+  .menu{
+    display: block;
+  }
+  .right-side-nav{
+    display: none;
+  }
+  .logo-nav{
+    display: none;
+   
+  }
+  .whole-nav{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+  }
+  .phonelogo{
+    display: block;
+    align-items: center;
+    display: flex;
+
+  }
+  .phonelogo img{
+    height: 60px;
+    width: 80px;
+  }
+  .whole-nav{
+    background: #F0E8DC;
+
+  }
+}
