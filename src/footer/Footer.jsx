@@ -22,6 +22,8 @@ const Footer = () => {
       }
     }, 100); // Delay ensures the page navigates to home before scrolling
   };
+  
+
   return (
     <div className="app-footer">
       <div className="app-footer-div1">
@@ -32,16 +34,17 @@ const Footer = () => {
             <p> Welcome to Eintransport! We are a trusted and reliable packing and moving service dedicated to making your relocation experience smooth and hassle-free.</p>
         </div>
         <div className="three-footer">
-<a href="https://www.instagram.com/yourusername/" target="_blank"> 
+        <a href="https://www.instagram.com/eintransport?igsh=MWdnZ29sb3dhb2J5Yw==" target="_blank"> 
   <img src={group} alt='img'/>
 </a>
 
-<a href="https://www.twitter.com/yourusername/" target="_blank"> 
+<a href="https://x.com/eintranspo92563?t=OKi5L5XsKMl_OAF2-s4Ftw&s=09" target="_blank"> 
   <img src={group2} alt='img'/>
 </a>
-<a href="https://www.facebook.com/yourusername/" target="_blank"> 
+<a href="https://www.facebook.com/profile.php?id=61565638056769&mibextid=kFxxJD" target="_blank"> 
   <img src={group3} alt='img'/>
 </a>
+
         </div>
         <div className="four-footer">
             <p>Copyright @2024</p>
@@ -85,14 +88,14 @@ const Footer = () => {
   <p> Welcome to Eintransport! We are a trusted and reliable packing and moving service dedicated to making your relocation experience smooth and hassle-free.</p>
 </div>
 <div className="three-footer-res">
-  <a href="https://www.instagram.com/yourusername/" target="_blank"> 
+<a href="https://www.instagram.com/eintransport?igsh=MWdnZ29sb3dhb2J5Yw==" target="_blank"> 
   <img src={group} alt='img'/>
 </a>
 
-<a href="https://www.twitter.com/yourusername/" target="_blank"> 
+<a href="https://x.com/eintranspo92563?t=OKi5L5XsKMl_OAF2-s4Ftw&s=09" target="_blank"> 
   <img src={group2} alt='img'/>
 </a>
-<a href="https://www.facebook.com/yourusername/" target="_blank"> 
+<a href="https://www.facebook.com/profile.php?id=61565638056769&mibextid=kFxxJD" target="_blank"> 
   <img src={group3} alt='img'/>
 </a>
 
