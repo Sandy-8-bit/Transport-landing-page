@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css'; // assuming you're using a separate CSS file
-import car from "./Men next to a vehicle involved in freight transportation.svg"
+import car from "./EinTransport.png_1@2x.png"
 const AboutSection = () => {
   return (
     <div className="app-about-container">
